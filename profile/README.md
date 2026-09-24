@@ -24,6 +24,12 @@ O catálogo oficial de jogos está entrando agora em uma rodada específica de *
 
 Veja [como testar o beta e reportar problemas](../docs/BETA_TESTING.md).
 
+<p align="center">
+  <a href="https://aprincar.github.io/platform/">
+    <img src="https://raw.githubusercontent.com/aprincar/platform/v1.0.0/_validation/screenshots/tablet-home.png" alt="Tela inicial do Aprincar V1 em tablet" width="760" />
+  </a>
+</p>
+
 ## O que é o Aprincar?
 
 O Aprincar nasce da junção de **APRender + brINCAR**. A proposta é oferecer experiências educacionais em que a criança explora, tenta, cria e descobre — sem transformar a brincadeira em um LMS infantil.
