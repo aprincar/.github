@@ -1,0 +1,106 @@
+name: Feedback do beta
+description: Relate um problema de uso, clareza ou comportamento observado durante o beta
+title: "[beta]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por testar o Aprincar. Relate apenas o comportamento observado e não inclua dados que identifiquem crianças.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Plataforma / navegação
+        - Jogo oficial
+        - Progresso / evidence
+        - Offline / instalação
+        - Acessibilidade / controles
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: game
+    attributes:
+      label: Jogo ou tela
+      description: Se aplicável, informe o nome do jogo ou da tela onde ocorreu.
+      placeholder: Ex. Torre de Blocos
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o comportamento observado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que você esperava?
+      description: Descreva o comportamento que faria sentido para a ação realizada.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir
+      description: Informe os passos desde a abertura da aplicação.
+      placeholder: |
+        1. Abri...
+        2. Toquei...
+        3. Arrastei...
+        4. O jogo...
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Dispositivo e navegador
+      placeholder: Ex. Android 15 / Chrome 140; Windows 11 / Edge
+    validations:
+      required: true
+
+  - type: dropdown
+    id: input
+    attributes:
+      label: Tipo de interação
+      options:
+        - Toque
+        - Mouse / trackpad
+        - Teclado
+        - Caneta
+        - Não se aplica
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequência
+      options:
+        - Sempre
+        - Às vezes
+        - Aconteceu uma vez
+        - Não consegui repetir
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Evidência opcional
+      description: Captura ou vídeo curto ajuda. Remova nomes, rostos e qualquer dado que identifique crianças.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacidade
+      options:
+        - label: Confirmo que não incluí dados que identifiquem crianças.
+          required: true
