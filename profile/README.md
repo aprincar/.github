@@ -9,11 +9,11 @@
 <p align="center">
   <a href="https://aprincar.github.io/platform/"><strong>Experimentar o beta</strong></a>
   ·
-  <a href="https://github.com/aprincar/.github/blob/main/docs/GETTING_STARTED.md">Rodar localmente</a>
+  <a href="https://github.com/aprincar/platform#quero-rodar-localmente">Rodar localmente</a>
   ·
-  <a href="https://github.com/aprincar/.github/blob/main/docs/EXTENSIONS.md">Criar um jogo</a>
+  <a href="https://github.com/aprincar/platform/blob/main/docs/EXTENSIONS.md">Criar um jogo</a>
   ·
-  <a href="https://github.com/aprincar/.github/blob/main/CONTRIBUTING.md">Contribuir</a>
+  <a href="https://github.com/aprincar/platform/blob/main/CONTRIBUTING.md">Contribuir</a>
 </p>
 
 ## Status
@@ -44,19 +44,19 @@ Princípios centrais:
 - evidência de atividade não é automaticamente domínio de uma habilidade;
 - BNCC é mapeada por meio do Skill Graph, nunca diretamente pelo jogo.
 
-## Ecossistema
+## Repositório oficial
 
-| Repositório | Papel |
+Todo o desenvolvimento do Aprincar está concentrado em [aprincar/platform](https://github.com/aprincar/platform).
+
+| Diretório | Papel |
 | --- | --- |
-| [platform](https://github.com/aprincar/platform) | Aplicação web/PWA, Hub, runtime, SDK, progresso, armazenamento e distribuição |
-| [games-official](https://github.com/aprincar/games-official) | Catálogo oficial e código-fonte dos jogos mantidos pelo projeto |
-| [community-games](https://github.com/aprincar/community-games) | Fluxo de publicação e curadoria de jogos da comunidade |
-| [curriculum-bncc](https://github.com/aprincar/curriculum-bncc) | Adaptador curricular e mapeamentos conservadores para a BNCC |
-| [game-template-vite](https://github.com/aprincar/game-template-vite) | Template mínimo para extensões web |
-| [game-template-react](https://github.com/aprincar/game-template-react) | Template para jogos e atividades em React |
-| [game-template-phaser](https://github.com/aprincar/game-template-phaser) | Template para experiências 2D com Phaser |
-| [game-template-threejs](https://github.com/aprincar/game-template-threejs) | Template para experiências 3D com Three.js |
-| [.github](https://github.com/aprincar/.github) | Contratos do produto, documentação transversal e governança |
+| [apps](https://github.com/aprincar/platform/tree/main/apps) | Aplicação e Hub |
+| [packages](https://github.com/aprincar/platform/tree/main/packages) | Runtime, SDK, progresso e armazenamento |
+| [games](https://github.com/aprincar/platform/tree/main/games) | Jogos oficiais e comunitários |
+| [content](https://github.com/aprincar/platform/tree/main/content) | Currículo BNCC |
+| [templates](https://github.com/aprincar/platform/tree/main/templates) | Exemplos de autoria |
+
+Novas contribuições e issues devem ser encaminhadas ao repositório principal. Os antigos repositórios de desenvolvimento permanecem como referências históricas até o encerramento da migração. O repositório especial `.github` mantém o perfil e a governança da organização.
 
 ## Arquitetura em uma frase
 
@@ -68,9 +68,9 @@ O jogo não acessa diretamente IndexedDB da aplicação, DOM do responsável, PI
 
 **Quero testar:** abra o [beta publicado](https://aprincar.github.io/platform/) e siga o roteiro de [teste do beta](../docs/BETA_TESTING.md).
 
-**Quero desenvolver o Aprincar:** consulte [Começando](../docs/GETTING_STARTED.md), [Arquitetura](../docs/ARCHITECTURE.md) e [Operação](../docs/OPERATIONS.md).
+**Quero desenvolver o Aprincar:** consulte [Começando](https://github.com/aprincar/platform#quero-rodar-localmente), [Arquitetura](https://github.com/aprincar/platform/blob/main/docs/ARCHITECTURE.md) e [Operação](https://github.com/aprincar/platform/blob/main/docs/OPERATIONS.md).
 
-**Quero criar um jogo:** comece por [Extensões](../docs/EXTENSIONS.md) e escolha um dos templates oficiais.
+**Quero criar um jogo:** comece por [Extensões](https://github.com/aprincar/platform/blob/main/docs/EXTENSIONS.md) e escolha um dos templates oficiais.
 
 **Quero entender as regras do produto:** leia primeiro o [Product Contract](../docs/product/PRODUCT_CONTRACT.md), depois [Visão](../docs/product/VISION.md) e [Princípios](../docs/product/PRINCIPLES.md).
 
